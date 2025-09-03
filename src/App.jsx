@@ -52,9 +52,28 @@ function App() {
 
         </section>
         <section className="destaque">
-        <iframe src="https://www.youtube.com/embed/p7cDN1ofIw0?autoplay=1&mute=1&controls=0&loop=1&playlist=p7cDN1ofIw0&modestbranding=1&showinfo=0" frameborder="0" allow="autoplay; fullscreen"></iframe>
+        <iframe src="https://www.youtube.com/embed/mUYhPakO130?autoplay=1&mute=1&controls=0&loop=1&playlist=mUYhPakO130&modestbranding=1&showinfo=0" frameborder="0" allow="autoplay; fullscreen"></iframe>
         </section>
-        <footer></footer>
+        <footer>
+
+          <img src="" alt="" className='logo-footer' />
+
+          <div className="social-icon">
+            <div className="icon">
+              <img src="" alt="" id="instagram" />
+            </div>
+            <div className="icon">
+              <img src="" alt="" id="facebook" />
+            </div>
+            <div className="icon">
+              <img src="" alt="" id="tik tok" />
+            </div>
+            <div className="icon">
+              <img src="" alt="" id="discord" />
+            </div>
+          </div>
+
+        </footer>
       </main>
     </>
   )
