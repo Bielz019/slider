@@ -3,14 +3,42 @@ import './App.css'
 import Carmy from './assets/chuteira-3.jpg'
 import Cjoa from './assets/chuteira-1.webp'
 import Curs from './assets/chuteira-2.webp'
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import {Autoplay} from 'swiper/modules'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
       <main>
-        <header></header>
+        <header>
+          <Swiper
+              modules={[Autoplay]}
+              spaceBetween={0}
+              slidesPerView={1}
+              autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+              }}
+              loop={true}
+              className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={Slider1} alt="Slide 1" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Slider2} alt="Slide 2" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Slider1} alt="Slide 3" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Slider2} alt="Slide 3" />
+            </SwiperSlide>
+            </Swiper>
+            </header>
+
         <section className="produtos">
 
           {/* Produto 1 */}
